@@ -131,6 +131,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
+  transition: color var(--primamy-transition-time) var(--cubic);
 }
 
 .contact.link > :not(:last-child),
@@ -221,12 +222,12 @@ body {
 .button.hero-button {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--primamy-transition-time) var(--cubic);
 }
 
 .hero-button:hover {
   background-color: #188ce8;
-  transition: 20ms;
-}
+  }
 
 .list-advantage,
 .list-what-we-do,
@@ -281,7 +282,7 @@ body {
   line-height: 0;
 }
 
-.section-what-we-do .text-container-link{
+.section-what-we-do .text-container-description{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -295,6 +296,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color:var(--white-in-progect);
+  text-transform: uppercase;
 
 }
 
@@ -355,6 +357,8 @@ body {
 
 .list-our-team .social-link {
   color: var(--social-link);
+  transition: background-color var(--primamy-transition-time) var(--cubic), color var(--primamy-transition-time) var(--cubic);
+  background-color: ;
 }
 
 .list-our-team .social-link:hover,
@@ -398,6 +402,7 @@ body {
   width: 170px;
   height: 92px;
   cursor: pointer;
+  transition: color var(--primamy-transition-time) var(--cubic),  border-color var(--primamy-transition-time) var(--cubic);
 }
 
 .customer-item:hover {
@@ -415,6 +420,9 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--hero-footer-bc);
+}
+.footer .item{
+  transition: color var(--primamy-transition-time) var(--cubic);
 }
 .footer .container {
   display: flex;
@@ -462,6 +470,7 @@ body {
 .footer-social-block .social-link {
   color: var(--white-in-progect);
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--primamy-transition-time) var(--cubic), color var(--primamy-transition-time) var(--cubic);
 }
 
 .footer-social-block .social-link:hover,
@@ -489,6 +498,7 @@ body {
   color: var(--primary-text-color);
   background-color: var(--secondary-bc);
   padding: 6px 22px;
+  transition: box-shadow var(--primamy-transition-time) var(--cubic);
 }
 
 .button-portfolio.current{
@@ -572,6 +582,7 @@ body {
 
 .portfolio-list-link {
   display: block;
+  transition: box-shadow var(--primamy-transition-time) var(--cubic);
 }
 .portfolio-list-link:hover,
 .portfolio-list-link:focus {
@@ -629,7 +640,10 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   width: 30px;
   height: 30px;
 
@@ -639,7 +653,7 @@ body {
   color: #000;
 }
 .backdrop-close .icon.svg{
-  
+  display: block;
   width: 11px;
   height: 11px;
 }
